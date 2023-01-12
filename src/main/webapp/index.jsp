@@ -10,7 +10,7 @@
       <img src="https://octodex.github.com/images/spidertocat.png" alt="Spidertocat"
            class="img-responsive center-block" style="width:250px"/>
       <h2 class="text-center">Hello World! First Java Pipeline V0.1</h2>
-      <p class="text-center">Now with Arti K-CI-CD!</p>
+      <p class="text-center">Now with Arti K-CI-CD!New Change</p>
   </div>
 </body>
 </html>

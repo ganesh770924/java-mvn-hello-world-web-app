@@ -1,1 +1,16 @@
-
+stage('Store war to Nexus') {
+            steps{
+                
+            nexusArtifactUploader artifacts: [[artifactId: 'mvn-hello-world', 
+                  classifier: '',
+                  file: 'target/mvn-hello-world.war', type: 'war']], 
+                  credentialsId: 'nexus-token', groupId: 'com.dev3l.hello_world', 
+                  nexusUrl: 'localhost:8082', 
+                  nexusVersion: 'nexus3', 
+                  protocol: 'http', 
+                  repository: 'java-mvn-CI-repo', 
+                  version: '1.0.0'
+            
+             }
+           
+        } 
